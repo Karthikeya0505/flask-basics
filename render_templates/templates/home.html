@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    {%for post in posts%}
+        <h1>{{post.author}}</h1>
+            <h4>{{post.invention}}</h4>
+            <h4>{{post.profession}}</h4>
+    {% endfor %}
+
+{% endblock %}
